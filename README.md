@@ -20,7 +20,18 @@ The paper focuses on multi-modal recommendation systems, which integrate various
 class="center">
 </p>
 
+## Usage (Arts for example)
+### 1. dataset preprocess
+First, you need to download the corresponding data file from the [Google Drive link](https://drive.google.com/drive/folders/1jX7G8foZ7vdIVm5ROqnyUpy6-Tzp-bHF?usp=drive_link) provided and place it in the specified [`data`](data) folder. Then, you will need to run [`1_lmdb_build.py`](data/1_lmdb_build.py) and [`2_lmdb_read.py`](data/2_lmdb_read.py) to obtain the lmdb file.
+### 2. run
+```
+python run_arts.py
+```
+You can freely change the range of hyperparameter values according to your needs.
+
 ## News
+[2023.11] Upload the Arts dataset!
+
 [2023.11] We have released the code for our paper. However, the current code has not been thoroughly tested and may contain some unexpected issues. We will provide detailed explanations for the usage and dataset sections in the future.
 
 [2023.10] Selected as an Oral at ACM MM 2023!
